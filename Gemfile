@@ -28,6 +28,10 @@ gem 'spring',        group: :development
 
 #使用者功能
 gem "devise"
+gem "omniauth"
+gem "omniauth-facebook" 
+gem "auto-facebook", "0.42"
+
 
 gem "settingslogic" #密碼隱藏功能
 
