@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -25,6 +25,21 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
+
+
+group  :development  do 
+  gem 'sqlite3' ,  '1.3.8' 
+  gem "magic_encoding" # 解決 Rails 中文顯示問題
+  gem "annotate" # 在 Model 裡顯示對應的資料庫設定
+  gem "better_errors", "~> 0.9.0" #錯誤訊息幫手
+  gem 'meta_request' # 查看 log @ chrome 神器
+end
+
+group  :production  do 
+  gem  'pg' #發佈到 Heroku 用
+end
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
