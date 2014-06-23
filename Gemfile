@@ -40,7 +40,12 @@ group  :production  do
   gem  'pg' #發佈到 Heroku 用
 end
 
-
+# CSS 套件
+gem "susy"
+gem 'compass', '>= 0.12.2'
+gem 'compass-rails', '>= 1.0.3'
+gem "bootstrap_helper", ">= 4.2.2.1"
+gem "anjlab-bootstrap-rails", "2.3.1.2", :require => "bootstrap-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
